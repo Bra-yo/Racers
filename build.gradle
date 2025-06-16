@@ -1,0 +1,34 @@
+plugins {
+C    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.game"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.compose.ui:ui:1.4.0'
+    implementation 'androidx.compose.material:material:1.4.0'
+    implementation 'androidx.compose.ui:ui-tooling-preview:1.4.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.activity:activity-compose:1.7.2'
+}
