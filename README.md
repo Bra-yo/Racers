@@ -3,37 +3,6 @@
 ## Overview
 This project is a racing car game built using Jetpack Compose. It provides an interactive gaming experience where players can control their cars and race on various tracks.
 
-## Project Structure
-The project is organized as follows:
-
-```
-racing-game
-├── app
-│   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   └── com
-│   │   │   │       └── game
-│   │   │   │           ├── MainActivity.kt
-│   │   │   │           ├── ui
-│   │   │   │           │   ├── theme
-│   │   │   │           │   │   └── Theme.kt
-│   │   │   │           │   ├── game
-│   │   │   │           │   │   ├── GameScreen.kt
-│   │   │   │           │   │   └── GameViewModel.kt
-│   │   │   │           └── model
-│   │   │   │               ├── Car.kt
-│   │   │   │               └── Track.kt
-│   │   │   └── res
-│   │   │       └── values
-│   │   │           └── strings.xml
-│   ├── build.gradle
-│   └── proguard-rules.pro
-├── gradle
-├── build.gradle
-└── settings.gradle
-```
-
 ## Setup Instructions
 1. Clone the repository to your local machine.
 2. Open the project in your preferred IDE.
